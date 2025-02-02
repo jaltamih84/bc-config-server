@@ -12,6 +12,6 @@ spring:
       server:
         git:
           default-label: master
-          uri: https://github.com/jaltamih84/config-data
+          uri: https://github.com/jaltamih84/bc-config-data
           search-paths: "{application}/{profile}"
           clone-on-start: true
