@@ -1,0 +1,17 @@
+server:
+  port: 8888
+app:
+  name: @project.artifactId@
+  version: @project.version@
+  description: @project.description@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          default-label: master
+          uri: https://github.com/jaltamih84/config-data
+          search-paths: "{application}/{profile}"
+          clone-on-start: true
